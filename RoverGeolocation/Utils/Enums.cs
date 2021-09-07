@@ -11,7 +11,7 @@ namespace RoverGeolocation.Utils
             North='n',
             South='s',
             East='e',
-            W='w'
+            West='w'
         };
         public enum CommandsAccepted {
             Forward = 'f',
