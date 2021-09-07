@@ -11,7 +11,6 @@ C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\bin\Debug\net5.0\Microsoft.O
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.csproj.AssemblyReference.cache
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.AssemblyInfoInputs.cache
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.AssemblyInfo.cs
@@ -27,3 +26,6 @@ C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeoloc
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\ref\RoverGeolocation.dll
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.pdb
 C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.genruntimeconfig.cache
+C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\obj\Debug\net5.0\RoverGeolocation.csproj.AssemblyReference.cache
+C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\bin\Debug\net5.0\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\RoverGeolocation\bin\Debug\net5.0\SharedLibrary.pdb

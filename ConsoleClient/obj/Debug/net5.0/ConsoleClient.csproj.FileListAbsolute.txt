@@ -5,7 +5,6 @@ C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\ConsoleClient.
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\ConsoleClient.dll
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\ref\ConsoleClient.dll
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\ConsoleClient.pdb
-C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.csproj.AssemblyReference.cache
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.AssemblyInfoInputs.cache
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.AssemblyInfo.cs
@@ -16,3 +15,6 @@ C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.genruntimeconfig.cache
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.csproj.CopyComplete
+C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\obj\Debug\net5.0\ConsoleClient.csproj.AssemblyReference.cache
+C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\ConsoleClient\bin\Debug\net5.0\SharedLibrary.pdb

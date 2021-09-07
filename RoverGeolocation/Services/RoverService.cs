@@ -18,31 +18,34 @@ namespace RoverGeolocation.Services
         {
             for (int i = 0; i < commands.Length; i++)
             {
-                if (commands[i] == (char)Enums.CommandsAccepted.Forward)
-                {
-                    rover.PositionY++;
-                    rover.CardinalOrientation = (char)Enums.CardinalOrientation.North;
+                switch (commands[i]) {
+                    case (char)Enums.CommandsAccepted.Forward:
+                        rover.PositionY++;
+                        rover.CardinalOrientation = Enums.CardinalOrientation.North.ToString();
+                        break;
+
+                    case (char)Enums.CommandsAccepted.Backward:
+                        rover.PositionY--;
+                        rover.CardinalOrientation = Enums.CardinalOrientation.South.ToString();
+                        break;
+                    case (char)Enums.CommandsAccepted.Left:
+                        rover.PositionX--;
+                        rover.CardinalOrientation = Enums.CardinalOrientation.West.ToString();
+                        break;
+                    case (char)Enums.CommandsAccepted.Right:
+                        rover.PositionX++;
+                        rover.CardinalOrientation = Enums.CardinalOrientation.East.ToString();
+                        break;
                 }
-                if (commands[i] == (char)Enums.CommandsAccepted.Backward)
-                {
-                    rover.PositionY--;
-                    rover.CardinalOrientation = (char)Enums.CardinalOrientation.South;
-                }
-                if (commands[i] == (char)Enums.CommandsAccepted.Left)
-                {
-                    rover.PositionX--;
-                    rover.CardinalOrientation = (char)Enums.CardinalOrientation.East;
-                }
-                if (commands[i] == (char)Enums.CommandsAccepted.Right)
-                {
-                    rover.PositionX++;
-                    rover.CardinalOrientation = (char)Enums.CardinalOrientation.West;
-                }
+                
             }
         }
 
         public bool CheckCommandsIntegrity(char[] commands)
         {
+            if (commands.Length==0) {
+                return false;
+            }
             for (int i = 0; i < commands.Length; i++)
             {
                 if (!rover.AcceptedCommands.Contains(commands[i])) return false;

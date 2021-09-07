@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
 using RoverGeolocation.Models;
+using RoverGeolocation.Services;
+using RoverGeolocation.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +14,12 @@ namespace Tests
     public class RoverShould
     {
         Rover rover;
+        RoverService roverService;
 
         [SetUp]
         public void Before() {
             rover = new Rover();
+            roverService = new RoverService(rover);
         }
 
         [Test]
@@ -28,7 +32,7 @@ namespace Tests
         [Test]
         public void Be_Facing_North_At_The_Beggining() {
             //Then
-            Assert.AreEqual('n', rover.CardinalOrientation);
+            Assert.AreEqual("North", rover.CardinalOrientation);
         }
         [Test]
         public void Be_At_The_Position_0X_1Y_When_Command_Is_Forward_And_Previous_Position_Was_0x_0Y() {
@@ -36,7 +40,7 @@ namespace Tests
             char[] command = new char[1];
             command[0] = 'f';
             //When
-            rover.Move(command);
+            roverService.Move(command);
             //Then
             Assert.AreEqual(1, rover.PositionY);
             Assert.AreEqual(0, rover.PositionX);
@@ -49,7 +53,7 @@ namespace Tests
             char[] commands = new char[1];
             commands[0] = 'b';
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
             Assert.AreEqual(2, rover.PositionY);
             Assert.AreEqual(2, rover.PositionX);
@@ -63,7 +67,7 @@ namespace Tests
             char[] commands = new char[1];
             commands[0] = 'l';
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
             Assert.AreEqual(3, rover.PositionY);
             Assert.AreEqual(-3, rover.PositionX);
@@ -76,7 +80,7 @@ namespace Tests
             rover.PositionY = 1;
             char[] commands = new char[1] { 'r' };
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
             Assert.AreEqual(1, rover.PositionY);
             Assert.AreEqual(10, rover.PositionX);
@@ -87,9 +91,9 @@ namespace Tests
          
             char[] commands = new char[]{'b','f','b','f','r','b','l','f' };
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
-            Assert.AreEqual('n', rover.CardinalOrientation);
+            Assert.AreEqual(Enums.CardinalOrientation.North.ToString(), rover.CardinalOrientation);
         }
         [Test]
         public void Be_Facing_South_If_Last_Command_Received_Was_Backward()
@@ -98,33 +102,33 @@ namespace Tests
           
             char[] commands = new char[] { 'b', 'f', 'b', 'f', 'r', 'b', 'l', 'f','b' };
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
-            Assert.AreEqual('s', rover.CardinalOrientation);
+            Assert.AreEqual(Enums.CardinalOrientation.South.ToString(), rover.CardinalOrientation);
         }
         [Test]
-        public void Be_Facing_East_If_Last_Command_Received_Was_Left() {
+        public void Be_Facing_West_If_Last_Command_Received_Was_Left() {
             //Given
             char[] commands = new char[] { 'b', 'f', 'r', 'f', 'r', 'b', 'l', 'r', 'l' };
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
-            Assert.AreEqual('e', rover.CardinalOrientation);
+            Assert.AreEqual(Enums.CardinalOrientation.West.ToString(), rover.CardinalOrientation);
         }
         [Test]
-        public void Be_Facing_West_If_Last_Command_Received_Was_Right() {
+        public void Be_Facing_East_If_Last_Command_Received_Was_Right() {
             //Given
             char[] commands = new char[] { 'f', 'f', 'f', 'f', 'r', 'b', 'l', 'b', 'r' };
             //When
-            rover.Move(commands);
+            roverService.Move(commands);
             //Then
-            Assert.AreEqual('w', rover.CardinalOrientation);
+            Assert.AreEqual(Enums.CardinalOrientation.East.ToString(), rover.CardinalOrientation);
         }
         [Test]
-        public void Have_Accepted_Commands() {
+        public void Have_Four_Acceptable_Directives_F_B_L_R() {
 
             //Then
-            Assert.IsNotEmpty(rover.AcceptedCommands);
+            Assert.AreEqual(4, rover.AcceptedCommands.Count);
         }
         [TestCase(new char[] { 'f','b','x'},false)]
         [TestCase(new char[] { 'f', 'b', 'x','r' }, false)]
@@ -136,11 +140,12 @@ namespace Tests
         [TestCase(new char[] { 'f', 'b', 'l','r' }, true)]
         public void Check_Commands_Integrity(char[] commands, bool expected) {
             //When
-            bool actual = rover.CheckCommandsIntegrity(commands);
+            bool actual = roverService.CheckCommandsIntegrity(commands);
             
             //Then
             Assert.AreEqual(expected, actual);
         }
+        
 
     }
 

@@ -112,3 +112,5 @@ C:\Mis Proyectos\MarsKata\MarsKata\Tests\bin\Debug\net5.0\Swashbuckle.AspNetCore
 C:\Mis Proyectos\MarsKata\MarsKata\Tests\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Mis Proyectos\MarsKata\MarsKata\Tests\bin\Debug\net5.0\RoverGeolocation.dll
 C:\Mis Proyectos\MarsKata\MarsKata\Tests\bin\Debug\net5.0\RoverGeolocation.pdb
+C:\Mis Proyectos\MarsKata\MarsKata\Tests\bin\Debug\net5.0\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\Tests\bin\Debug\net5.0\SharedLibrary.pdb

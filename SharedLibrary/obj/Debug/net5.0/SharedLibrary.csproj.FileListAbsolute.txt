@@ -1,0 +1,11 @@
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\bin\Debug\net5.0\SharedLibrary.deps.json
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\bin\Debug\net5.0\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\bin\Debug\net5.0\ref\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\bin\Debug\net5.0\SharedLibrary.pdb
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.AssemblyInfoInputs.cache
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.AssemblyInfo.cs
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.csproj.CoreCompileInputs.cache
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\ref\SharedLibrary.dll
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.pdb
