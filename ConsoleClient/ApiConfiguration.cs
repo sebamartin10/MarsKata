@@ -9,9 +9,11 @@ namespace ConsoleClient
 {
     public class ApiConfiguration
     {
-        public void ConfigureAPI(HttpClient httpClient) {
+        HttpClient httpClient;
+        public HttpClient ConfigureAPI() {
             httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri("https://localhost:44365/");
+            return httpClient;
         }
     }
 }

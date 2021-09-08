@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using RoverGeolocation.Models;
 using RoverGeolocation.Services;
+using RoverGeolocation.Services.Contracts;
 using RoverGeolocation.Utils;
 using System;
 using System.Collections.Generic;
@@ -13,13 +14,13 @@ namespace Tests
     
     public class RoverShould
     {
-        Rover rover;
-        RoverService roverService;
+        Vehicle rover;
+        IVehicleService roverService;
 
         [SetUp]
         public void Before() {
-            rover = new Rover();
-            roverService = new RoverService(rover);
+            rover = new Vehicle();
+            roverService = new VehicleService(rover);
         }
 
         [Test]

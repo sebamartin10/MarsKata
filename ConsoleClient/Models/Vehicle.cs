@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleClient.Models
 {
-    public class Rover
+    public class Vehicle
     {
         public int PositionX { get; set; }
         public int PositionY { get; set; }

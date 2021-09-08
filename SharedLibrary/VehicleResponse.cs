@@ -2,10 +2,10 @@
 
 namespace SharedLibrary
 {
-    public class RoverResponse <T>
+    public class VehicleResponse <T>
     {
         public int Code { get; set; } = 0;
         public string Message { get; set; } = String.Empty;
-        public T Rover { get; set; }
+        public T VehicleStatus { get; set; }
     }
 }

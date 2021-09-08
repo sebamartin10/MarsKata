@@ -6,14 +6,14 @@ using RoverGeolocation.Utils;
 
 namespace RoverGeolocation.Models
 {
-    public class Rover
+    public class Vehicle
     {
         public int PositionX { get; set; }
         public int PositionY { get; set; }
         public string CardinalOrientation { get; set; }
         public List<char> AcceptedCommands { get; set; }
 
-        public Rover() {
+        public Vehicle() {
             PositionX = 0;
             PositionY = 0;
             CardinalOrientation = Enums.CardinalOrientation.North.ToString();

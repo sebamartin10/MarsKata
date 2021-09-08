@@ -9,3 +9,4 @@ C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.
 C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.dll
 C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\ref\SharedLibrary.dll
 C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.pdb
+C:\Mis Proyectos\MarsKata\MarsKata\SharedLibrary\obj\Debug\net5.0\SharedLibrary.csproj.AssemblyReference.cache

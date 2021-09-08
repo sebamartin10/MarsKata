@@ -9,23 +9,24 @@ using System.Threading.Tasks;
 
 namespace RoverGeolocation.Controllers
 {
-    public class RoverController : Controller
+    public class VehicleController : Controller
     {
-        Rover rover;
-        public RoverController(Rover rover) {
-            this.rover = rover;
+        Vehicle vehicle;
+        public VehicleController(Vehicle vehicle) {
+            this.vehicle = vehicle;
         }
         [HttpGet]
-        public Rover Init()
+        public Vehicle Init()
         {
-             return rover;
+             return vehicle;
         }
         
         [HttpGet]
-        public RoverResponse<Rover> ReceiveDirectives(string directives) {
-            RoverResponse<Rover> response = new RoverResponse<Rover>();
+        public VehicleResponse<Vehicle> ReceiveDirectives(string directives) {
+            VehicleResponse<Vehicle> response = new VehicleResponse<Vehicle>();
             char[] commands = directives.ToCharArray();
-            RoverService roverServices = new RoverService(rover);
+            VehicleService roverServices = new VehicleService(vehicle);
+            ValidationService validationServices = new ValidationService(vehicle);
             bool areCommandsOk = roverServices.CheckCommandsIntegrity(commands);
             if (!areCommandsOk) {
                 response.Code = -1;
@@ -33,7 +34,7 @@ namespace RoverGeolocation.Controllers
                 return response;
             }
             roverServices.Move(commands);
-            response.Rover = rover;
+            response.VehicleStatus = vehicle;
             return response;
 
         }   

@@ -10,14 +10,15 @@
         "projectUniqueName": "C:\\Mis Proyectos\\MarsKata\\MarsKata\\SharedLibrary\\SharedLibrary.csproj",
         "projectName": "SharedLibrary",
         "projectPath": "C:\\Mis Proyectos\\MarsKata\\MarsKata\\SharedLibrary\\SharedLibrary.csproj",
-        "packagesPath": "C:\\Users\\jmartin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\sebam\\.nuget\\packages\\",
         "outputPath": "C:\\Mis Proyectos\\MarsKata\\MarsKata\\SharedLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jmartin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
 ﻿using RoverGeolocation.Models;
+using RoverGeolocation.Services.Contracts;
 using RoverGeolocation.Utils;
 using System;
 using System.Collections.Generic;
@@ -7,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace RoverGeolocation.Services
 {
-    public class RoverService
+    public class VehicleService : IVehicleService
     {
-        Rover rover;
+        Vehicle rover;
 
-        public RoverService(Rover rover) {
+        public VehicleService(Vehicle rover) {
             this.rover = rover;
         }
         public void Move(char[] commands)
